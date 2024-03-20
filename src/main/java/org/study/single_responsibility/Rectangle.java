@@ -14,8 +14,16 @@ public class Rectangle {
         return height;
     }
 
+    public void setHeight(Double height) {
+        this.height = height;
+    }
+
     public Double getBase() {
         return base;
+    }
+
+    public void setBase(Double base) {
+        this.base = base;
     }
 
     @Override
