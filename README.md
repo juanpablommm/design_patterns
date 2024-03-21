@@ -46,5 +46,13 @@ de ser sustituibles por sus clases base sin que esto cause errores en el program
 la clase base no puede utilizar la subclase de forma intercambiable sin conocer la diferencia entre ellas,  
 entonces la subclase estaría violando el principio de Sustitución de lskov 
  
+### Interface Segregation (Segregacion de Interfacs)
+Los clientes no debden de ser forzados a depndender de metodos que no usan.
+* "A client should never be forced to implement an interface that it does not use or clientes 
+shouldn't be forced to depend on methods they do not use".
 
- 
+Es decir siempre que cremos interfaces que definan comportamniento debdemos estar seguros de que
+las clases que las impmentaran utilizen todos los metodos definidos y en caso de que no sea asi
+debemos seguir sabstrayendo nuestro modelo y generar peuqeañlas interfaces.
+Alas interfaces en que se define mas de lo debido que no todas las clases que la implmenten
+puedan cumplir con todos los contrator definidos, se les conoce como **fat interfaces**
