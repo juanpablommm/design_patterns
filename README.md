@@ -33,3 +33,18 @@ de alta de usarios que ya se tiene o ningun otro modulo ay existente. **Este pri
 o aplicando un tipado sobre los objectos mediante interfaces o mediante clases abstractas, logrando asi que cumplan con un contrado 
 al tener metodos que son comunes en tre diferentes tclases o atributos que compartan**
 
+### Substitution de Liskov
+En términos simple este principio nos menciona que los subtipos deben de ser sustituibles por
+sus tipos base.
+* "let q(x)be a property provable about objects of x of type T. 
+Then q(y) should b provable for objects y of type S where S is a subtype of T"
+
+Si una clase S es un subtipo de una clase T, entonces lo objectos de tipo T en un programa  
+pueden ser reemplazados por objectos de tipo S sin alterar ninguna de las propiedades
+deseables del programa, Es decir en términos prácticos, esto significa que las subclases deben
+de ser sustituibles por sus clases base sin que esto cause errores en el programa. Si el código que usa
+la clase base no puede utilizar la subclase de forma intercambiable sin conocer la diferencia entre ellas,  
+entonces la subclase estaría violando el principio de Sustitución de lskov 
+ 
+
+ 
